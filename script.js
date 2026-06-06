@@ -1,7 +1,7 @@
 function mudarTema(tema){
     if(tema == "verde"){
         document.body.style.background =
-        "linear-gradient(135deg,#0d3b0d,#1e7d32,#4caf50)";
+        "linear-gradient(135deg, #0a2a0a, #145a24, #2e7d32)";
     } else if(tema == "escuro"){
         document.body.style.background =
         "linear-gradient(135deg,#000,#111,#222)";
