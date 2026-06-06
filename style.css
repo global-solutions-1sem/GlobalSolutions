@@ -1,0 +1,317 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap");
+
+:root {
+  --azul-escuro: #061a40;
+  --azul: #0b3d91;
+  --azul-claro: #1d70b8;
+  --verde-escuro: #0b6b4f;
+  --verde: #2fbf71;
+  --verde-claro: #a7f070;
+  --branco: #ffffff;
+  --texto: #d8f3dc;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", Arial, sans-serif;
+  background: linear-gradient(135deg, #061a40, #0b3d91, #0b6b4f);
+  color: var(--branco);
+  line-height: 1.6;
+}
+
+/* HEADER */
+header {
+  background-color: #061a40;
+  padding: 18px 6%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+header img {
+  width: 160px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: var(--texto);
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 10px;
+  border-radius: 20px;
+}
+
+nav a:hover {
+  background-color: var(--verde-claro);
+  color: var(--azul-escuro);
+}
+
+/* SEÇÕES */
+section {
+  width: 88%;
+  max-width: 1100px;
+  margin: auto;
+  padding: 75px 0;
+  scroll-margin-top: 100px;
+}
+
+.home {
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.home h1 {
+  font-size: 70px;
+  color: var(--verde-claro);
+  margin-bottom: 20px;
+}
+
+.home p {
+  background-color: rgba(6, 26, 64, 0.65);
+  padding: 22px;
+  border-radius: 8px;
+  max-width: 760px;
+  margin-bottom: 12px;
+}
+
+h2 {
+  font-size: 42px;
+  color: var(--verde-claro);
+  margin-bottom: 20px;
+}
+
+h2::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 4px;
+  background-color: var(--verde);
+  margin-top: 12px;
+  border-radius: 20px;
+}
+
+h3 {
+  color: var(--verde);
+  margin-bottom: 10px;
+}
+
+h4 {
+  color: var(--branco);
+  margin-bottom: 12px;
+}
+
+p {
+  color: var(--texto);
+  font-size: 17px;
+  max-width: 880px;
+  margin-bottom: 10px;
+}
+
+/* CARDS */
+.cards {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+
+.cards > div,
+.cards > img {
+  background-color: rgba(6, 26, 64, 0.65);
+  border: 1px solid rgba(167, 240, 112, 0.25);
+  border-radius: 8px;
+}
+
+.cards > div {
+  padding: 25px;
+  min-height: 220px;
+}
+
+.cards > img {
+  width: 100%;
+  height: 200px;
+  padding: 30px;
+  object-fit: contain;
+}
+
+.cards > div:hover,
+.cards > img:hover {
+  transform: translateY(-5px);
+  border-color: var(--verde-claro);
+}
+
+.cards div img {
+  width: 85px;
+  height: 85px;
+  object-fit: contain;
+  margin-top: 18px;
+}
+
+/* BENEFÍCIOS */
+.beneficios .cards {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.beneficios .cards > div {
+  text-align: center;
+}
+
+/* APLICAÇÃO */
+.aplicacao {
+  padding-bottom: 110px;
+}
+
+.aplicacao h3 {
+  color: var(--verde);
+}
+
+/* FOOTER */
+footer {
+  background-color: #061a40;
+  padding: 45px 6% 30px;
+  color: var(--texto);
+}
+
+.footer-container {
+  max-width: 1100px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+.footer-box {
+  flex: 1;
+  min-width: 220px;
+}
+
+.footer-box h3 {
+  color: var(--verde-claro);
+}
+
+.footer-box p {
+  font-size: 15px;
+}
+
+footer ul {
+  list-style: none;
+}
+
+footer li {
+  margin-bottom: 8px;
+}
+
+footer a {
+  color: var(--texto);
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: var(--verde-claro);
+}
+
+.redes-sociais {
+  margin-top: 10px;
+}
+
+footer hr {
+  max-width: 1100px;
+  margin: 30px auto 18px;
+  border: none;
+  height: 1px;
+  background-color: rgba(167, 240, 112, 0.25);
+}
+
+.footer-bottom {
+  max-width: 1100px;
+  margin: auto;
+}
+
+.footer-bottom p {
+  font-size: 14px;
+  max-width: none;
+}
+
+.integrantes {
+  color: var(--verde-claro);
+  font-weight: bold;
+}
+
+/* RESPONSIVO */
+@media (max-width: 900px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .cards,
+  .beneficios .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .home h1 {
+    font-size: 52px;
+  }
+
+  h2 {
+    font-size: 34px;
+  }
+}
+
+@media (max-width: 600px) {
+  header img {
+    width: 140px;
+  }
+
+  nav ul {
+    gap: 8px;
+  }
+
+  nav a {
+    font-size: 14px;
+  }
+
+  section {
+    width: 90%;
+    padding: 55px 0;
+  }
+
+  .cards,
+  .beneficios .cards {
+    grid-template-columns: 1fr;
+  }
+
+  .home h1 {
+    font-size: 42px;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    gap: 28px;
+  }
+}
