@@ -1,15 +1,14 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="./style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Agro-satélite</title>
+    <title>Agro-satelite</title>
 </head>
 <body>
     <header>
-        <img src="./icons/logo.png" alt="Logo do AgroTech">
-
+        <img src="./icons/logo.png" alt="logo">
         <nav>
             <ul>
                 <li><a href="#home">Home</a></li>
@@ -25,122 +24,96 @@
             <button onclick="mudarTema('padrao')">Padrão</button>
             <button onclick="mudarTema('verde')">Verde</button>
             <button onclick="mudarTema('escuro')">Escuro</button>
-        </div>
+    </div>
     </header>
-
     <section class="home" id="home">
         <h1>AgroTech</h1>
-        <p>Nossa iniciativa usa tecnologia agrícola para facilitar o acesso a dados climáticos e de solo. Transformamos dados de satélite em informações simples para apoiar pequenos agricultores.</p>
+        <p>Nossa iniciativa é uma solução de tecnologia agrícola voltada para a democratização de dados climáticos e de solo. Nosso propósito é transformar dados complexos obtidos via satélite em insights práticos, acessíveis e fáceis de entender para pequenos agricultores, promovendo uma agricultura mais eficiente, sustentável e lucrativa.</p>
     </section>
-
     <section class="problema" id="problema">
         <h2>O Alto Custo de Produzir no Escuro</h2>
-        <p>Sem dados em tempo real, o agricultor depende do clima e da intuição.</p>
-        <p>Isso causa desperdício, baixa produtividade e maior risco de perder a safra.</p>
-
-        <div class="cards">
-            <img src="./icons/campo.png" alt="Campo agrícola">
-            <img src="./icons/agricultura.png" alt="Agricultor plantando">
-            <img src="./icons/plantio.png" alt="Planta em crescimento">
-        </div>
+        <p>No agronegócio moderno, errar o timing do plantio ou a quantidade de insumos custa caro. Sem acesso a dados em tempo real sobre a saúde da terra, o agricultor fica refém do clima e da intuição. O modelo tradicional de análise de solo é lento e gera apenas um retrato estático do passado, impedindo reações rápidas a secas ou pragas. Essa falta de visibilidade causa desperdício de recursos, reduz o potencial da terra e expõe o produtor ao risco constante de perder safras inteiras.</p>
+            <div class="slideshow">
+                <img id="slide" src="./icons/campo.png">
+            </div>
     </section>
-
     <section class="tecnologias" id="tecnologias">
         <h2>Inteligência Orbital a Serviço da Terra</h2>
-        <p>Nossa solução conecta dados de satélite ao smartphone do produtor.</p>
-        <p>O sistema transforma vegetação, umidade e temperatura em diagnósticos simples.</p>
-
-        <div class="cards">
-            <img src="./icons/satelite.png" alt="Satélite">
-            <img src="./icons/satelite-terra.png" alt="Satélite orbitando a Terra">
-            <img src="./icons/satelite-agricultura.png" alt="Satélite monitorando agricultura">
+        <p>Nossa solução conecta o monitoramento aeroespacial diretamente ao smartphone do produtor. Utilizamos dados gerados por satélites de observação da Terra (como o índice de vegetação NDVI, umidade de superfície e temperatura do solo). Essas informações brutas são coletadas via APIs especializadas e processadas por um motor de regras inteligente no nosso back-end. O sistema traduz coordenadas e dados complexos de satélite em diagnósticos simples, práticos e visuais para a tomada de decisão.</p>
+        <div class="slideshow-satelite">
+            <img id="satSlide" src="./icons/satelite.png">
         </div>
     </section>
-
     <section class="objetivos" id="objetivos">
         <h2>Guiar o Produtor para a Safra Perfeita</h2>
-
         <div class="cards">
             <div class="card1">
                 <h3>Otimizar o manejo da terra:</h3>
-                <p>Entregar diagnósticos rápidos sobre as condições do solo.</p>
+                <p>Entregar diagnósticos em tempo real sobre as condições do solo.</p>
             </div>
-
             <div class="card2">
                 <h3>Garantir a máxima eficiência:</h3>
-                <p>Indicar culturas com maior chance de sucesso na área analisada.</p>
+                <p>Indicar com precisão quais culturas possuem maior chance de sucesso na área analisada.</p>
             </div>
-
             <div class="card3">
                 <h3>Promover a sustentabilidade:</h3>
-                <p>Sugerir rotação de culturas para proteger os nutrientes do solo.</p>
+                <p>Sugerir planos inteligentes de rotação de culturas para a próxima safra, evitando a exaustão dos nutrientes do solo.</p>
             </div>
         </div>
     </section>
-
     <section class="publico" id="publico">
         <h2>Para Quem Deseja Colher o Futuro</h2>
-        <p>Nossa plataforma apoia produtores, cooperativas e consultores agrícolas.</p>
-
+        <p>Nossa plataforma foi desenhada para transformar a rotina de:</p>
         <div class="cards">
             <div class="card1">
                 <h3>Pequenos e médios produtores rurais:</h3>
-                <img src="./icons/publico-agricultor.png" alt="Ícone de agricultor">
-                <p>Buscam reduzir riscos e aumentar a produtividade com baixo investimento.</p>
+                <img src="./icons/publico-agricultor.png" alt="">
+                <p>Que buscam aumentar sua margem de lucro e reduzir os riscos de perda sem precisar investir em maquinários caros de sensoriamento.</p>
             </div>
-
             <div class="card2">
                 <h3>Cooperativas agrícolas:</h3>
-                <img src="./icons/publico-fabrica.png" alt="Ícone de cooperativa agrícola">
-                <p>Desejam acompanhar as terras dos associados de forma organizada.</p>
+                <img src="./icons/publico-fabrica.png" alt="">
+                <p>Que desejam monitorar a evolução das terras de seus associados de forma centralizada.</p>
             </div>
-
             <div class="card3">
                 <h3>Engenheiros agrônomos e consultores:</h3>
-                <img src="./icons/publico-consultor.png" alt="Ícone de consultor agrícola">
-                <p>Precisam de dados rápidos para apoiar recomendações no campo.</p>
+                <img src="./icons/publico-consultor.png" alt="">
+                <p>Que necessitam de um histórico de dados preciso e rápido para apoiar suas recomendações técnicas no campo.</p>
             </div>
         </div>
     </section>
-
     <section class="beneficios" id="beneficios">
         <h2>Por que Escolher Nossa Solução?</h2>
-
         <div class="cards">
             <div class="card1">
-                <h3>Decisões baseadas em dados:</h3>
-                <img src="./icons/beneficios-dados.png" alt="Ícone de dados">
+                <h3>Decisões Baseadas em Dados:</h3>
+                <img src="./icons/beneficios-dados.png" alt="">
             </div>
-
             <div class="card2">
-                <h3>Economia de recursos:</h3>
-                <img src="./icons/beneficios-economia.png" alt="Ícone de economia">
+                <h3>Economia de Recursos:</h3>
+                <img src="./icons/beneficios-economia.png" alt="">
             </div>
-
             <div class="card3">
-                <h3>Aumento de produtividade:</h3>
-                <img src="./icons/beneficios-produtividade.png" alt="Ícone de produtividade">
+                <h3>Aumento de Produtividade:</h3>
+                <img src="./icons/beneficios-produtividade.png" alt="">
             </div>
-
             <div class="card4">
-                <h3>Acessibilidade completa:</h3>
-                <img src="./icons/beneficios-acessibilidade.png" alt="Ícone de acessibilidade">
+                <h3>Acessibilidade Completa:</h3>
+                <img src="./icons/beneficios-acessibilidade.png" alt="">
             </div>
         </div>
     </section>
-
     <section class="aplicacao" id="aplicacao">
         <h2>Aplicação no Dia a Dia</h2>
-        <h3>A Tecnologia no Seu Bolso</h3>
-        <p>O agricultor acessa o aplicativo e visualiza a propriedade por setores.</p>
-        <p>Ao detectar riscos, o sistema envia alertas e recomendações rápidas.</p>
+        <h3>A Tecnologia no Seu Bolso, o Resultado na Sua Colheita</h3>
+        <p>Na prática, o agricultor abre o aplicativo logo no início do dia e visualiza um mapa interativo de sua propriedade, dividido por setores. Se o satélite detectar uma queda brusca na umidade de uma área específica, o sistema envia um alerta imediato com dicas de irrigação. Antes do término da colheita atual, a plataforma já analisa as condições acumuladas da terra e recomenda: "Seu solo está ideal para o plantio de milho na próxima safra". É o suporte de um engenheiro agrônomo virtual disponível 24 horas por dia.</p>
     </section>
 
     <footer>
         <div class="footer-container">
             <div class="footer-box info">
                 <h3>Agro-satélite</h3>
-                <p>Inteligência orbital para apoiar o futuro do agronegócio.</p>
+                <p>Inteligência orbital transformando o futuro do agronegócio de ponta a ponta.</p>
             </div>
 
             <div class="footer-box links">
@@ -160,9 +133,8 @@
                 <h4>Contato</h4>
                 <p>Email: contato@agrosatelite.com</p>
                 <div class="redes-sociais">
-                    <a href="https://github.com/JLSCamelo/GlobalSolutions" target="_blank" rel="noopener">
-                        GitHub: JLSCamelo/GlobalSolutions
-                    </a>
+                    <a href="#">LinkedIn</a> | 
+                    <a href="#">GitHub</a>
                 </div>
             </div>
         </div>
@@ -170,13 +142,13 @@
         <hr>
 
         <div class="footer-bottom">
-            <p>&copy; 2026 AgroTech Solutions - Global Solution FIAP.</p>
+            <p>©2026 AgroTech Solutions - Global Solution FIAP.</p>
             <p class="integrantes">Desenvolvido por:</p>
-            <p class="integrantes">Anna Giazzi - RM: 569846</p>
-            <p class="integrantes">Erick Diego - RM: 574064</p>
-            <p class="integrantes">Giulia Stella - RM 568888:</p>
+            <p class="integrantes">Anna - RM: </p>
+            <p class="integrantes">Erick - RM:  </p>
+            <p class="integrantes">Giulia - RM: </p>
             <p class="integrantes">Julia Lopes - RM: 574139</p>
-            <p class="integrantes">Rafael Willian - RM: 570738 </p>
+            <p class="integrantes">Rafael - RM: </p>
         </div>
     </footer>
     <script src="script.js"></script>
