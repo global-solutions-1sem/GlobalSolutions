@@ -107,7 +107,7 @@ function responder(opcao){
         carregarPergunta();
     }else{
         document.getElementById("pontuacao").textContent =
-        `Você acertou ${pontos} de ${perguntas.length} questões.`;
+        'Você acertou ${pontos} de ${perguntas.length} questões.';
     }
 }
 
