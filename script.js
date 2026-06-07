@@ -1,14 +1,14 @@
-function mudarTema(tema){
-    if(tema == "verde"){
+function mudarTema(tema) {
+    if (tema == "verde") {
         document.body.style.background =
-        "linear-gradient(135deg,#0d3b0d,#1e7d32,#4caf50)";
-    } else if(tema == "escuro"){
+        "linear-gradient(135deg, #061a40, #0b6b4f, #2fbf71)";
+    } else if (tema == "escuro") {
         document.body.style.background =
-        "linear-gradient(135deg,#000,#111,#222)";
+        "linear-gradient(135deg, #020617, #0f172a, #1e293b)";
     } else {
         document.body.style.background =
-        "linear-gradient(135deg,#12002f,#250062,#860063)"
-    }   
+        "linear-gradient(135deg, #12002f, #250062, #860063)";
+    }
 }
 
 
