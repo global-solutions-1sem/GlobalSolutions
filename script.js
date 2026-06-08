@@ -60,21 +60,96 @@ document.getElementById("formulario").addEventListener("submit", function(e){ //
 });
 
 const perguntas = [
-{
-    pergunta: "Qual tecnologia utilizamos para monitorar as plantações?",
-    opcoes: ["IoT", "Satélites", "Bluetooth"],
+  {
+    pergunta: "Como a economia espacial ajuda diretamente o pequeno agricultor?",
+    opcoes: [
+      "Enviando sementes modificadas do espaço", 
+      "Fornecendo dados de satélite para prever o clima e entender o solo", 
+      "Substituindo o trabalho manual por robôs espaciais"
+    ],
     correta: 1
-},
-{
-    pergunta: "Qual índice é usado para analisar a vegetação?",
-    opcoes: ["NDVI", "HTML", "GPS"],
+  },
+  {
+    pergunta: "Qual é o principal objetivo da nossa solução agrícola?",
+    opcoes: [
+      "Vender equipamentos caros de alta tecnologia", 
+      "Tornar dados complexos de satélite em insights simples e práticos para o produtor", 
+      "Substituir os agrônomos na tomada de decisão"
+    ],
+    correta: 1
+  },
+  {
+    pergunta: "O que o índice NDVI, obtido por imagens de satélite, consegue medir no campo?",
+    opcoes: [
+      "A saúde e o vigor da vegetação", 
+      "A quantidade exata de água nas folhas", 
+      "A profundidade das raízes"
+    ],
     correta: 0
-},
-{
-    pergunta: "Qual tecnologia ajuda a interpretar os dados coletados?",
-    opcoes: ["IA", "Paint", "Excel"],
+  },
+  {
+    pergunta: "Por que a democratização de dados climáticos é importante para a sustentabilidade?",
+    opcoes: [
+      "Porque ajuda a evitar o desperdício de água e insumos na hora certa", 
+      "Porque dita quais culturas são proibidas por lei", 
+      "Porque altera o clima da região para favorecer a colheita"
+    ],
     correta: 0
-}
+  },
+  {
+    pergunta: "Como dados de satélite podem tornar a agricultura familiar mais lucrativa?",
+    opcoes: [
+      "Garantindo que o governo compre toda a safra", 
+      "Reduzindo perdas na colheita por meio de alertas de geadas ou secas", 
+      "Aumentando o preço final dos alimentos artificialmente"
+    ],
+    correta: 1
+  },
+  {
+    pergunta: "Qual tecnologia é usada para transformar dados complexos de solo e clima em mensagens fáceis de entender?",
+    opcoes: [
+      "Inteligência Artificial e Processamento de Dados", 
+      "Apenas planilhas manuais", 
+      "Transmissão de rádio AM/FM"
+    ],
+    correta: 0
+  },
+  {
+    pergunta: "Além do clima, que tipo de monitoramento do solo os satélites modernos conseguem estimar?",
+    opcoes: [
+      "A presença de pedras preciosas", 
+      "Tendências de umidade e degradação da terra", 
+      "A quantidade de minhocas por metro quadrado"
+    ],
+    correta: 1
+  },
+  {
+    pergunta: "O que significa dizer que uma solução promove a 'agricultura de precisão' para pequenos produtores?",
+    opcoes: [
+      "Usar recursos como água e fertilizantes na quantidade certa e no lugar certo", 
+      "Garantir que todas as plantas tenham exatamente a mesma altura", 
+      "Colher a plantação sempre no mesmo minuto todos os anos"
+    ],
+    correta: 0
+  },
+  {
+    pergunta: "Qual é a maior barreira que nossa iniciativa quebra para o pequeno agricultor?",
+    opcoes: [
+      "O alto custo e a complexidade técnica para entender dados espaciais", 
+      "A falta de sementes no mercado tradicional", 
+      "A necessidade de comprar tratores autônomos"
+    ],
+    correta: 0
+  },
+  {
+    pergunta: "De que forma a economia espacial impulsiona a segurança alimentar global?",
+    opcoes: [
+      "Criando estufas na Lua para produzir alimentos", 
+      "Monitorando safras em escala global para prever e mitigar crises de abastecimento", 
+      "Controlando as pragas diretamente do espaço usando lasers"
+    ],
+    correta: 1
+  }
 ];
 
 let indice = 0;
